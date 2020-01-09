@@ -16,3 +16,5 @@ When building the lnk make sure to ask the user for a set of keys to trigger the
 Make a UI, these are degenerates just like me. 
 
 Drop the mp3s in %appdata% under a folder called "vinnySpeen" for easy deletion.
+
+Randomize the grandfather clock speens.
