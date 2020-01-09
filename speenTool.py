@@ -1,4 +1,4 @@
-import os, re
+import os
 
 # Get prereqs
 from importlib import util
@@ -12,7 +12,7 @@ spam_loader = util.find_spec('winshell')
 if (spam_loader is None):
     os.system("python -m pip install winshell")
 
-import playsound, time, winshell
+import playsound, random, time, winshell
 
 cwd = os.getcwd()
-playsound.playsound(cwd+"\speens\speen.mp3")
+playsound.playsound(cwd + "\speens\\" + random.choice(os.listdir(cwd+"\speens\\")))
