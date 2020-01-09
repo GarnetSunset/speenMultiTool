@@ -14,3 +14,5 @@ Hardcode the name of that .lnk. That way we can delete it if the user hates it.
 When building the lnk make sure to ask the user for a set of keys to trigger them. 
 
 Make a UI, these are degenerates just like me. 
+
+Drop the mp3s in %appdata% under a folder called "vinnySpeen" for easy deletion.
