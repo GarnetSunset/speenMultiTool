@@ -16,6 +16,7 @@ if len(sys.argv) == 1:
     playsound.playsound(cwd + "\speens\\" + random.choice(os.listdir(cwd+"\speens\\")))
     exit()
 
+# g for grandfather clock mode
 if sys.argv[1] == "g":
     if int(hour) > 12:
         hour = hour - 12
