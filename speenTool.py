@@ -1,12 +1,4 @@
-import os
-
-# Get prereqs
-from importlib import util
-spam_loader = util.find_spec('playsound')
-if (spam_loader is None):
-    os.system("python -m pip install playsound")
-    
-import datetime, playsound, random, sys, time
+import datetime, os, playsound, random, shutil, sys, time
 
 cwd = os.getcwd()
 now = datetime.datetime.now()
@@ -26,3 +18,5 @@ if sys.argv[1] == "g":
         goUp += 1
         playsound.playsound(cwd + "\speens\\" + random.choice(os.listdir(cwd+"\speens\\")))
 
+if sys.argv[1] == "i":
+    print("h")
