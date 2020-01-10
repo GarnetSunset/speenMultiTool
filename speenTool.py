@@ -23,4 +23,8 @@ if sys.argv[1] == "g":
     goUp = 0
     while goUp != currentHour:
         goUp += 1
+<<<<<<< HEAD
         playsound.playsound(cwd + "\speens\\" + random.choice(os.listdir(cwd+"\speens\\")))
+=======
+        playsound.playsound(cwd + "\speens\\" + random.choice(os.listdir(cwd+"\speens\\")))
+>>>>>>> 90b4ed147c3006e9f06c8fc4b9c142bd1c066d26
