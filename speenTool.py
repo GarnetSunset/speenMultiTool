@@ -38,6 +38,8 @@ if sys.argv[1] == "-i":
         
 if sys.argv[1] == "-u":
     if os.name == "nt":
+        if is_admin == False:
+            elevate()
         os.remove("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\\speen.lnk")
         print("Removed!")
     else:
