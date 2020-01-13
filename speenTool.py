@@ -5,8 +5,6 @@ cwd = os.getcwd()
 now = datetime.datetime.now()
 hour = now.strftime("%I")
 
-# Python 3 pylnk required: https://github.com/strayge/pylnk
-
 if len(sys.argv) == 1:
     playsound.playsound(cwd + "\speens\\" + random.choice(os.listdir(cwd+"\speens\\")))
     exit()
@@ -29,7 +27,6 @@ if sys.argv[1] == "-g":
 # install as a hotkey
 if sys.argv[1] == "-i":
     if os.name == "nt":
-        #whereisw = os.popen("where epythonw").read()
         link = pylnk.for_file(cwd+"\\speenTool.py")
         link.hot_key = "SHIFT+ALT+S"
         if is_admin == False:
