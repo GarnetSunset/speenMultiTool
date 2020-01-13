@@ -34,14 +34,14 @@ if sys.argv[1] == "-i":
         link.hot_key = "SHIFT+ALT+S"
         if is_admin == False:
             elevate()
-        link.save("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\\test.lnk")
+        link.save("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\\speen.lnk")
         print("Congrats! You should have speen now, usable by typing \"Shift + Alt + S\" whenever you want!\nYou will have to either reboot or log out and back in for it to begin working though.")
     else:
         print("No linux support yet")
         
 if sys.argv[1] == "-u":
     if os.name == "nt":
-        os.remove("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\\test.lnk")
+        os.remove("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\\speen.lnk")
         print("Removed!")
     else:
         print("No linux support yet.")
